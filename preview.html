@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>C2JT</title>
+
+  <!-- Graffiti-style font -->
+  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #071426, #0b2342, #102f55);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      color: white;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .title {
+      font-family: "Rock Salt", cursive;
+      font-size: clamp(4rem, 15vw, 12rem);
+      letter-spacing: 8px;
+      text-align: center;
+
+      background: linear-gradient(
+        90deg,
+        red,
+        orange,
+        yellow,
+        lime,
+        cyan,
+        blue,
+        violet,
+        red
+      );
+      background-size: 400%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+
+      animation: rainbowMove 4s linear infinite;
+      text-shadow: 0 0 25px rgba(255, 255, 255, 0.15);
+    }
+
+    @keyframes rainbowMove {
+      0% {
+        background-position: 0%;
+      }
+      100% {
+        background-position: 400%;
+      }
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 25px;
+      width: 100%;
+      text-align: center;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      color: rgba(255, 255, 255, 0.75);
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="title">C2JT</h1>
+
+  <div class="footer">
+    Developed by nottsurt
+  </div>
+
+</body>
+</html>
